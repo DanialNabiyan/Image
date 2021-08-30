@@ -1,0 +1,14 @@
+﻿<form action="http://localhost:27907/api/AddImage" method="post" enctype="multipart/form-data">
+    <label>Select Your Image.....</label>
+    <br /><br />
+    <input type="file" name="file" />
+    <br />
+    <input type="submit" value="Submit" />
+</form>
+
+@if (ViewData["Alert"] != null)
+{
+    <div class="alert alert-success">@ViewData["Alert"]</div>
+}
+
+
